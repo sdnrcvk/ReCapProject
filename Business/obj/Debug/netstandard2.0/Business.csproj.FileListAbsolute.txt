@@ -1,0 +1,16 @@
+D:\YazilimciGelistirmeKampi\ReCapProject\Business\bin\Debug\netstandard2.0\Business.deps.json
+D:\YazilimciGelistirmeKampi\ReCapProject\Business\bin\Debug\netstandard2.0\Business.dll
+D:\YazilimciGelistirmeKampi\ReCapProject\Business\bin\Debug\netstandard2.0\Business.pdb
+D:\YazilimciGelistirmeKampi\ReCapProject\Business\bin\Debug\netstandard2.0\DataAccess.dll
+D:\YazilimciGelistirmeKampi\ReCapProject\Business\bin\Debug\netstandard2.0\Entities.dll
+D:\YazilimciGelistirmeKampi\ReCapProject\Business\bin\Debug\netstandard2.0\DataAccess.pdb
+D:\YazilimciGelistirmeKampi\ReCapProject\Business\bin\Debug\netstandard2.0\Entities.pdb
+D:\YazilimciGelistirmeKampi\ReCapProject\Business\obj\Debug\netstandard2.0\Business.csprojAssemblyReference.cache
+D:\YazilimciGelistirmeKampi\ReCapProject\Business\obj\Debug\netstandard2.0\Business.AssemblyInfoInputs.cache
+D:\YazilimciGelistirmeKampi\ReCapProject\Business\obj\Debug\netstandard2.0\Business.AssemblyInfo.cs
+D:\YazilimciGelistirmeKampi\ReCapProject\Business\obj\Debug\netstandard2.0\Business.csproj.CoreCompileInputs.cache
+D:\YazilimciGelistirmeKampi\ReCapProject\Business\obj\Debug\netstandard2.0\Business.csproj.CopyComplete
+D:\YazilimciGelistirmeKampi\ReCapProject\Business\obj\Debug\netstandard2.0\Business.dll
+D:\YazilimciGelistirmeKampi\ReCapProject\Business\obj\Debug\netstandard2.0\Business.pdb
+D:\YazilimciGelistirmeKampi\ReCapProject\Business\bin\Debug\netstandard2.0\Core.dll
+D:\YazilimciGelistirmeKampi\ReCapProject\Business\bin\Debug\netstandard2.0\Core.pdb
