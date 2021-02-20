@@ -1439,6 +1439,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Castle.Core": "4.4.1",
+          "FluentValidation": "9.5.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.1"
         },
         "compile": {

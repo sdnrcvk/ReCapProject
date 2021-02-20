@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "+OOWAtFHL2p4qCNyQZ78LZOgRn9kPsiz55I/qDAUOLSNd1By8qpJinonO3JRs2QmkZXH1ZIlcFPMnf21UI8yTQ==",
+  "dgSpecHash": "Rndyp3FzndeYvQCiJZtesVKGGSEzoEd4ZzewXY0HnCWTeMsNiF22uAyCUp8w3tXHNXGKCSsxU0GlnfPlryzNeQ==",
   "success": true,
   "projectFilePath": "D:\\YazilimciGelistirmeKampi\\ReCapProject\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\seda\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
+    "C:\\Users\\seda\\.nuget\\packages\\fluentvalidation\\9.5.1\\fluentvalidation.9.5.1.nupkg.sha512",
     "C:\\Users\\seda\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\seda\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\seda\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
