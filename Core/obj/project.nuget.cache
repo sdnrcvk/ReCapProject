@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "zOZunEEGDcGB/PVevdl7aSEtykb087ribNmp/nAqNu833X4aU43x7Xn9ySqX3yRlW1mRMr3RFBnLXAaxO78aAA==",
+  "dgSpecHash": "+OOWAtFHL2p4qCNyQZ78LZOgRn9kPsiz55I/qDAUOLSNd1By8qpJinonO3JRs2QmkZXH1ZIlcFPMnf21UI8yTQ==",
   "success": true,
   "projectFilePath": "D:\\YazilimciGelistirmeKampi\\ReCapProject\\Core\\Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\seda\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\seda\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\seda\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\seda\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -62,6 +63,7 @@
     "C:\\Users\\seda\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\seda\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.0\\system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512",
     "C:\\Users\\seda\\.nuget\\packages\\system.diagnostics.tools\\4.3.0\\system.diagnostics.tools.4.3.0.nupkg.sha512",
+    "C:\\Users\\seda\\.nuget\\packages\\system.diagnostics.tracesource\\4.3.0\\system.diagnostics.tracesource.4.3.0.nupkg.sha512",
     "C:\\Users\\seda\\.nuget\\packages\\system.diagnostics.tracing\\4.3.0\\system.diagnostics.tracing.4.3.0.nupkg.sha512",
     "C:\\Users\\seda\\.nuget\\packages\\system.dynamic.runtime\\4.3.0\\system.dynamic.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\seda\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",
