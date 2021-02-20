@@ -18,15 +18,8 @@ namespace Business.Concrete
         }
         public IResult Add(Brand brand)
         {
-            if (brand.BrandName.Length >= 2)
-            {
-                _brandDal.Add(brand);
-                return new Result(true, Messages.BrandAdded);
-            }
-            else
-            {
-                return new ErrorResult(Messages.BrandNameInvalid);
-            }
+            _brandDal.Add(brand);
+            return new Result(true, Messages.BrandAdded);
         }
 
         public IResult Delete(Brand brand)
@@ -47,12 +40,9 @@ namespace Business.Concrete
 
         public IResult Update(Brand brand)
         {
-            if (brand.BrandName.Length > 2)
-            {
-                _brandDal.Update(brand);
-                return new Result(true, Messages.BrandUpdated);
-            }
-            return new ErrorResult(Messages.BrandNameInvalid);
+
+            _brandDal.Update(brand);
+            return new Result(true, Messages.BrandUpdated);
         }
     }
 }

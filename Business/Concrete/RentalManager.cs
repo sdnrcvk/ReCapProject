@@ -22,10 +22,6 @@ namespace Business.Concrete
 
         public IResult Add(Rental rental)
         {
-            if (rental.ReturnDate == null && _rentalDal.GetRentalDetails(I => I.CarId == rental.CarId).Count > 0)
-            {
-                return new ErrorResult(Messages.FailedRentalAdd);
-            }
             _rentalDal.Add(rental);
             return new Result(true,Messages.AddedRental);
         }

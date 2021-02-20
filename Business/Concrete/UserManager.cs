@@ -18,10 +18,6 @@ namespace Business.Concrete
         }
         public IResult Add(User user)
         {
-            if (user.FirstName == null || user.LastName == null || user.Password == null || user.Email == null)
-            {
-                return new ErrorResult(Messages.UserNotAdded);
-            }
             _userDal.Add(user);
             return new Result(true,Messages.UserAdded);
         }
