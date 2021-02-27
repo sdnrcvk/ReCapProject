@@ -52,7 +52,7 @@ namespace Business.Concrete
 
         }
 
-        public IDataResult<List<Car>> GetCarsByDailyPrice(int min, int max)
+        public IDataResult<List<Car>> GetCarsByDailyPrice(decimal min, decimal max)
         {
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(c => c.DailyPrice >= min && c.DailyPrice <= max));
 
@@ -61,11 +61,6 @@ namespace Business.Concrete
         public IDataResult<Car> GetById(int id)
         {
             return new SuccessDataResult<Car>(_carDal.Get(c => c.CarId == id));
-        }
-
-        public IDataResult<List<Car>> GetCarsByModelYear(string year)
-        {
-            return new SuccessDataResult<List<Car>>(_carDal.GetAll(c => c.ModelYear.Contains(year) == true));
         }
 
         public IDataResult<List<CarDetailDto>> GetCarDetails()

@@ -17,6 +17,7 @@ namespace Business.ValidationRules.FluentValidation
             RuleFor(c => c.Description).NotEmpty();
             RuleFor(c => c.Description).MinimumLength(5).WithMessage("Açıklama en az 5 karakter uzunluğunda olmalıdır.");
             RuleFor(c => c.ModelYear).NotEmpty();
+            
         }
     }
 }
