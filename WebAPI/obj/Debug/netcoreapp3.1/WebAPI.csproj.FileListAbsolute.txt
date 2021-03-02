@@ -20,7 +20,6 @@ D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsof
 D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
 D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
 D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
 D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
 D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
@@ -63,3 +62,15 @@ D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.
 D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Castle.Core.dll
 D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\FluentValidation.dll
 D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll

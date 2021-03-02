@@ -1,4 +1,4 @@
-﻿using Core.Utilities.Results;
+﻿using Core.Utilities.Results.Abstract;
 using Entities.Concrete;
 using Entities.DTOs;
 using System;
@@ -15,6 +15,6 @@ namespace Business.Abstract
         IResult Update(Rental rental);
         IDataResult<List<Rental>> GetAll();
         IDataResult<Rental> GetById(int id);
-        IDataResult<List<RentalDetailDto>> GetRentalDetails(int id);
+        IDataResult<List<RentalDetailDto>> GetRentalDetails();
     }
 }

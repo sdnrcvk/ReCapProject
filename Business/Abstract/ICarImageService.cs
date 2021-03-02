@@ -1,4 +1,4 @@
-﻿using Core.Utilities.Results;
+﻿using Core.Utilities.Results.Abstract;
 using Entities.Concrete;
 using Microsoft.AspNetCore.Http;
 using System;
@@ -13,8 +13,8 @@ namespace Business.Abstract
         IResult Add(IFormFile file, CarImage carImage);
         IResult Update(IFormFile file, CarImage carImage);
         IResult Delete(CarImage carImage);
-        IDataResult<List<CarImage>> GetAll(Expression<Func<CarImage, bool>> filter = null);
+        IDataResult<List<CarImage>> GetAll();
         IDataResult<CarImage> GetById(int id);
-
+        IDataResult<List<CarImage>> GetImagesByCarId(int id);
     }
 }

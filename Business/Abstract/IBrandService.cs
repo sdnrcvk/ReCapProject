@@ -1,4 +1,4 @@
-﻿using Core.Utilities.Results;
+﻿using Core.Utilities.Results.Abstract;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -12,7 +12,6 @@ namespace Business.Abstract
         IResult Update(Brand brand);
         IResult Delete(Brand brand);
         IDataResult<List<Brand>> GetAll();
-
         IDataResult<Brand> GetById(int id);
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Business.Concrete;
+using Core.Entities.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
@@ -22,12 +23,12 @@ namespace ConsoleUI
 
                 Console.WriteLine("\n 1-Add car \n 2-Delete car \n 3-Update car \n 4-List Cars \n 5-Add Brand " +
                     "\n 6-Delete Brand \n 7-Update Brand \n 8-List Brands \n 9-Add Color \n 10-Delete Color \n 11-Update Color \n " +
-                    "12-List Colors \n 13-Add Users \n 14-Delete Users \n 15-Update Users \n 16-List Users \n 17-RentalTest \n 18-Exit");
+                    "12-List Colors \n 13-RentalTest \n 14-Exit");
                 Console.WriteLine("\nYapmak istediğiniz işlemi seçiniz...");
                 var value = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Choice : " + value + "\n");
 
-                if (0 < value && value < 19)
+                if (0 < value && value < 15)
                 {
                     switch (value)
                     {
@@ -68,21 +69,9 @@ namespace ConsoleUI
                             ListColors(colorManager);
                             break;
                         case 13:
-                            AddUser(userManager);
-                            break;
-                        case 14:
-                            DeleteUser(userManager);
-                            break;
-                        case 15:
-                            UpdateUser(userManager);
-                            break;
-                        case 16:
-                            ListUsers(userManager);
-                            break;
-                        case 17:
                             ListRent(rentalManager);
                             break;
-                        case 18:
+                        case 14:
                             Environment.Exit(1);
                             break;
                     }
@@ -140,14 +129,14 @@ namespace ConsoleUI
         }
         private static void ListCars(CarManager carManager)
         {
-            Console.WriteLine("\nId\tBrand Id\tBrandName\tColor Id\tColor Name\tModel Year\tDaily Price\tDescription");
+            Console.WriteLine("\nId\tBrandName\tColor Name\tModel Year\tDaily Price\tDescription");
             Console.WriteLine("______________________________________________________________________________________________________________________\n");
             var result = carManager.GetCarDetails();
             if (result.Success == true)
             {
                 foreach (var car3 in result.Data)
                 {
-                    Console.WriteLine($"{car3.CarId}\t {car3.BrandId}\t\t{car3.BrandName}\t\t {car3.ColorId}\t\t{car3.ColorName}\t\t{car3.ModelYear}\t\t {car3.DailyPrice}\t\t{car3.Description}");
+                    Console.WriteLine($"{car3.CarId}\t\t{car3.BrandName}\t\t{car3.ColorName}\t\t{car3.ModelYear}\t\t {car3.DailyPrice}\t\t{car3.Description}");
                 }
             }
             else
@@ -226,64 +215,16 @@ namespace ConsoleUI
                 Console.WriteLine(" ");
             }
         }
-        private static void AddUser(UserManager userManager)
-        {
-            User us = new User();
-
-            Console.Write("First Name : ");
-            us.FirstName = Console.ReadLine();
-            Console.Write("\nLast Name : ");
-            us.LastName = Console.ReadLine();
-            Console.Write("\nEmail : ");
-            us.Email = Console.ReadLine();
-            Console.Write("\nPassword : ");
-            us.Password = Console.ReadLine();
-
-            userManager.Add(us);
-        }
-        private static void DeleteUser(UserManager userManager)
-        {
-            User us1 = new User();
-            Console.Write("CarId : ");
-            us1.Id = Convert.ToInt32(Console.ReadLine());
-            userManager.Delete(us1);
-        }
-        private static void ListUsers(UserManager userManager)
-        {
-            Console.WriteLine("\nUserId\tFirstN\tLastN\t\tEmail\t\tPassword");
-            Console.WriteLine("___________________________________________________________________________\n");
-            foreach (User user in userManager.GetAll().Data)
-            {
-                Console.WriteLine(user.Id +"\t"+ user.FirstName +"\t"+ user.LastName +"\t"+ user.Email +"\t"+ user.Password);
-                Console.WriteLine(" ");
-            }
-        }
-        private static void UpdateUser(UserManager userManager)
-        {
-            User us2 = new User();
-            Console.Write("User Id : ");
-            us2.Id = Convert.ToInt32(Console.ReadLine());
-            Console.Write("\nFirst Name : ");
-            us2.FirstName = Console.ReadLine();
-            Console.Write("\nLast Name : ");
-            us2.LastName = Console.ReadLine();
-            Console.Write("\nEmail : ");
-            us2.Email = Console.ReadLine();
-            Console.Write("\nPassword : ");
-            us2.Password = Console.ReadLine();
-
-            userManager.Update(us2);
-        }
         private static void ListRent(RentalManager rentalManager)
         {
-            Console.WriteLine("\nId\tBrandName\tCustomerName\t\tRentDate\tReturnDate");
+            Console.WriteLine("\nId\tBrandName\tCompanyName\t\tRentDate\tReturnDate");
             Console.WriteLine("_____________________________________________________________________________________\n");
-            var result = rentalManager.GetRentalDetailsDto();
+            var result = rentalManager.GetRentalDetails();
             if (result.Success == true)
             {
                 foreach (var re in result.Data)
                 {
-                    Console.WriteLine($"{re.Id}\t{re.BrandName}\t\t{re.CustomerName}\t{re.RentDate}\t{re.ReturnDate}");
+                    Console.WriteLine($"{re.Id}\t{re.BrandName}\t\t{re.CompanyName}\t{re.RentDate}\t{re.ReturnDate}");
                 }
             }
             else

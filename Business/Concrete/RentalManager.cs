@@ -3,7 +3,8 @@ using Business.Constants;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Business;
-using Core.Utilities.Results;
+using Core.Utilities.Results.Abstract;
+using Core.Utilities.Results.Concrete;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using Entities.DTOs;
@@ -26,7 +27,7 @@ namespace Business.Concrete
         [ValidationAspect(typeof(RentalValidator))]
         public IResult Add(Rental rental)
         {
-            IResult result = BusinessRules.Run(CheckIfCar(rental));
+            IResult result = BusinessRules.Run(CheckCarExistIfInRentalList(rental));
             if (result != null)
             {
                 return result;
@@ -51,9 +52,9 @@ namespace Business.Concrete
             return new SuccessDataResult<Rental>(_rentalDal.Get(I => I.Id == id));
         }
 
-        public IDataResult<List<RentalDetailDto>> GetRentalDetails(int id)
+        public IDataResult<List<RentalDetailDto>> GetRentalDetails()
         {
-            return new SuccessDataResult<List<RentalDetailDto>>(_rentalDal.GetRentalDetails(x => x.CarId == id));
+            return new SuccessDataResult<List<RentalDetailDto>>(_rentalDal.GetRentalDetails());
         }
 
         [ValidationAspect(typeof(RentalValidator))]
@@ -63,9 +64,9 @@ namespace Business.Concrete
             return new Result(true, Messages.RentalUpdated);
         }
 
-        private IResult CheckIfCar(Rental rental)
+        private IResult CheckCarExistIfInRentalList(Rental rental)
         {
-            var result = _rentalDal.GetAll(p => p.CarId == rental.CarId && p.ReturnDate > DateTime.Now).ToList();
+            var result = _rentalDal.GetAll(c => c.CarId == rental.CarId && c.ReturnDate > DateTime.Now).ToList();
             if (result.Count != 0)
             {
                 return new ErrorResult("Araç kullanımdadır!");

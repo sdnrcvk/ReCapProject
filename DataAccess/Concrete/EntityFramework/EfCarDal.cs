@@ -1,5 +1,6 @@
 ﻿using Core.DataAccess.EntityFramework;
 using DataAccess.Abstract;
+using DataAccess.Concrete.EntityFramework.Context;
 using Entities.Concrete;
 using Entities.DTOs;
 using Microsoft.EntityFrameworkCore;
@@ -17,7 +18,7 @@ namespace DataAccess.Concrete.EntityFramework
         {
             using (CarsContext context=new CarsContext())
             {
-                var result = from c in context.Cars
+                var result = from c in context.Cars 
                              join b in context.Brands
                              on c.BrandId equals b.BrandId
                              join co in context.Colors
@@ -25,8 +26,8 @@ namespace DataAccess.Concrete.EntityFramework
                              select new CarDetailDto
                              {
                                  CarId = c.CarId,
-                                 BrandId=b.BrandId,
-                                 ColorId=co.ColorId,
+                                 BrandId = b.BrandId,
+                                 ColorId = co.ColorId,
                                  BrandName = b.BrandName,
                                  ColorName=co.ColorName,
                                  DailyPrice = c.DailyPrice,
