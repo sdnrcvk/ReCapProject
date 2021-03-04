@@ -74,3 +74,4 @@ D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsof
 D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
 D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\YazilimciGelistirmeKampi\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\log4net.dll
